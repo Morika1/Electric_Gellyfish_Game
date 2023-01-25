@@ -1,6 +1,5 @@
 package com.example.hw1application;
 
-import android.util.Log;
 
 public class Game_Manager {
 
@@ -8,19 +7,50 @@ public class Game_Manager {
     private int distance; // num of rows in matrix
     private int numOfRoads; // num of cols in matrix, num of spongbobs..
     private int spongbobIndex;
+    private int score;
+    private int[] coinsIndex;
     private int[] jellyFishesIndex;
 
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public int[] getCoinsIndex() {
+        return coinsIndex;
+    }
+
+    public void setCoinsIndex(int[] coinsIndex) {
+        this.coinsIndex = coinsIndex;
+    }
 
     public Game_Manager(int life, int distance, int numOfRoads){
         this.life= life;
         this.distance = distance;
         this.numOfRoads = numOfRoads;
         this.spongbobIndex = numOfRoads/2;
-        Log.d("Game Manager builder:", "num of roads in game manager: "+ numOfRoads);
+        this.score =0;
+        this.coinsIndex = new int[numOfRoads];
         this.jellyFishesIndex = new int[numOfRoads];
 
-        for(int i=0; i<numOfRoads;i++)
-            jellyFishesIndex[i] = (-i-2);
+
+
+        for(int i=0; i<numOfRoads;i++){
+            if(i%2 == 0){
+                jellyFishesIndex[i] = (-i-2);
+                coinsIndex[i] = (i == 0 ? 0 : -i);
+
+            }else{
+                jellyFishesIndex[i] = (-i);
+                coinsIndex[i] = (-i-2);
+            }
+
+        }
+
 
     }
 
@@ -47,13 +77,30 @@ public class Game_Manager {
             if(jellyFishesIndex[i] < distance)
                 jellyFishesIndex[i]++;
             else
-                jellyFishesIndex[i] = (-i-1);
+                jellyFishesIndex[i] = (i%2 == 0? (-i-2) : -i);
         }
 
     }
 
+    public void moveCoins(){
+
+        for(int i=0; i<numOfRoads;i++){
+            if(coinsIndex[i] < distance)
+                coinsIndex[i]++;
+            else{
+                if(i%2 ==0)
+                    coinsIndex[i] = (i == 0? 0 : -i);
+
+                else
+                    coinsIndex[i] = (-i-2);
+            }
+        }
+    }
+
+
+
     public void moveSpongbob(boolean direction) {
-        if(spongbobIndex < numOfRoads -1 && direction)
+        if(spongbobIndex < numOfRoads - 1 && direction)
             spongbobIndex++;
 
         if(spongbobIndex > 0 && !direction)
@@ -65,6 +112,15 @@ public class Game_Manager {
             life--;
             return true;
         }
+        return false;
+    }
+
+    public boolean isCatch(){
+        if(coinsIndex[spongbobIndex ] == distance){
+            score+=10;
+            return true;
+        }
+
         return false;
     }
 

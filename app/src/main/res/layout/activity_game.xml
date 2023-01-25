@@ -22,144 +22,523 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/game_LBL_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentEnd="true"/>
+
             <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/game_LYN_hearts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true">
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/game_IMG_heart1"
-                    android:layout_width="40dp"
+                    android:layout_width="0dp"
                     android:layout_height="40dp"
+                    android:layout_weight="1"
                     android:layout_marginEnd="5dp"
                     app:srcCompat="@drawable/ic_heart"/>
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/game_IMG_heart2"
-                    android:layout_width="40dp"
+                    android:layout_width="0dp"
                     android:layout_height="40dp"
+                    android:layout_weight="1"
                     android:layout_marginEnd="5dp"
                     app:srcCompat="@drawable/ic_heart"/>
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/game_IMG_heart3"
-                    android:layout_width="40dp"
+                    android:layout_width="0dp"
                     android:layout_height="40dp"
+                    android:layout_weight="1"
                     android:layout_marginEnd="5dp"
                     app:srcCompat="@drawable/ic_heart"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
         </RelativeLayout>
 
-
-        <androidx.appcompat.widget.LinearLayoutCompat
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/game_IMG_jellyfish1"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/img_jellyfish"/>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
 
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/game_IMG_jellyfish2"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/img_jellyfish"/>
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish1"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
 
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/game_IMG_jellyfish3"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish2"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish3"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish10"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish11"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish4"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish5"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish6"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish12"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish13"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish7"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish8"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish9"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish14"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish15"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish16"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish17"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish18"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish19"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish20"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish21"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish22"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish23"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish24"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IMG_jellyfish25"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_jellyfish"/>
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin1"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin2"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin3"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin10"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin11"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin4"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin5"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin6"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin12"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin13"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin7"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin8"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin9"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin14"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin15"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin16"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin17"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin18"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin19"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin20"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin21"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin22"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin23"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin24"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/game_IC_coin25"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coin"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
 
 
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="100dp"/>
+
+        </RelativeLayout>
 
 
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1">
-
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/game_IMG_jellyfish4"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/img_jellyfish"/>
-
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/game_IMG_jellyfish5"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/img_jellyfish"/>
-
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/game_IMG_jellyfish6"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/img_jellyfish"/>
-
-
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="100dp"/>
-
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1">
-
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/game_IMG_jellyfish7"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/img_jellyfish"/>
-
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/game_IMG_jellyfish8"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/img_jellyfish"/>
-
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/game_IMG_jellyfish9"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/img_jellyfish"/>
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1">
 
             <androidx.appcompat.widget.LinearLayoutCompat
@@ -183,6 +562,20 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/game_IMG_spongbob3"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/img_spongbob"/>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/game_IMG_spongbob4"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/img_spongbob"/>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/game_IMG_spongbob5"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:layout_weight="1"

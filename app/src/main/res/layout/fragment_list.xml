@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TopTen_Activity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/list_LBL_listtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Top 10 Players"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/list_LBL_listtitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/list_BTN_one"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="5sp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/list_BTN_two"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="5sp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/list_BTN_three"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="5sp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/list_BTN_four"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="5sp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/list_BTN_five"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="5sp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/list_BTN_six"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="5sp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/list_BTN_seven"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="5sp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/list_BTN_eight"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="5sp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/list_BTN_nine"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="5sp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/list_BTN_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="5sp"
+            />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    
+
+
+
+</RelativeLayout>
